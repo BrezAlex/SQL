@@ -8,3 +8,8 @@ cur.execute("select sklady.kod, sklady.vmest from sklady inner join yasshiki on 
 a = cur.fetchone()
 
 print("Первое задание: " + "kod:", a[0], ", sklad:", a[1], sep="")
+
+# второе задание
+conn = sqlite3.connect('DataLab3')
+cur = conn.cursor()
+cur.execute("")
