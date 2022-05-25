@@ -1,5 +1,4 @@
 import sqlite3
-import time
 
 conn = sqlite3.connect('DataLab2')
 cur = conn.cursor()
@@ -8,4 +7,4 @@ cur.execute("SElect sklady.kod, sklady.vmest from sklady inner join yasshiki on 
 
 a = cur.fetchone()
 
-print("kod:", a[0], ", sklad:", a[1], sep="") #1
+print("Первое задание: " + "kod:", a[0], ", sklad:", a[1], sep="")
